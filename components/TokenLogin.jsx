@@ -5,7 +5,7 @@ const { marginBottom20, marginTop20, marginBottom8 } = getModule(['marginBottom8
 const { mainLoginContainer } = getModule(['mainLoginContainer'], false);
 const { verticalSeparator } = getModule(['verticalSeparator'], false);
 const colors = getModule(['colorHeaderPrimary'], false);
-const { loginToken } = getModule(['loginToken'], false);
+const { setToken } = getModule(['setToken'], false);
 const inputModule = getModule(['inputWrapper'], false);
 const contents = getModule(['contents'], false);
 const sizes = getModule(['size24'], false);
@@ -35,8 +35,9 @@ module.exports = class TokenLogin extends React.Component {
                      return this.refs.input.setState({ error: 'This field is necessary' });
                   }
 
-                  loginToken(this.refs.input.state.value);
+                  setToken(this.refs.input.state.value);
                   ev.stopPropagation();
+                  window.location.reload();
                }}>
                   <div className={contents.contents}>
                      Login
