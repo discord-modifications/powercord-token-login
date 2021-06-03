@@ -1,0 +1,7 @@
+{
+   "name": "Token Login",
+   "version": "1.0",
+   "description": "Allows you to login with a token on the login screen.",
+   "author": "eternal",
+   "license": "Unlicensed"
+}
