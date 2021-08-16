@@ -1,7 +1,8 @@
 {
    "name": "Token Login",
-   "version": "1.0",
+   "version": "1.0.0",
    "description": "Allows you to login with a token on the login screen.",
    "author": "eternal",
+   "discord": "shnvz5ryAt",
    "license": "Unlicensed"
 }
